@@ -14,6 +14,7 @@
         background-color: black;
         color: white;
       }
+      
       &:first-child {
         border-top-left-radius: 5px;
         border-right: none;
@@ -61,23 +62,33 @@
 
       @include sm {
         width: auto;
-        
+        padding: 20px;
         &:nth-child(2),
         &:nth-child(3) {
           width: auto;
         }
-        padding: 20px;
-        border: 1px solid #999;
+      
+        & {
+          border: 1px solid #999; // اس لائن کو & {} کے اندر لپیٹ دیں
+        }
       }
     }
-    button {
-      border: none;
-      background-color: #fece51;
+    a{
       flex: 1;
-      cursor: pointer;
+      // width: 130px;
+      background-color: #fece51;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      @include sm {
-        padding: 10px;
+      button {
+        border: none;
+        cursor: pointer;
+      background-color: #fece51;
+        
+        @include sm {
+          padding: 10px;
+        }
       }
       img {
         width: 24px;

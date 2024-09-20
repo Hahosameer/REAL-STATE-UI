@@ -4,7 +4,7 @@
     .listContainer{
         flex: 3;
         height: 100%;
-
+       
         .wrapper{
             height: 100%;
             padding-right: 20px;
@@ -13,6 +13,11 @@
             gap: 50px;
             overflow-y: scroll;
             padding-bottom: 10px;
+
+            image{
+                width: 40px;
+            }
+
         }
         .wrapper::-webkit-scrollbar {
             width: 8px;
@@ -34,5 +39,14 @@
         flex: 2;
         height: 100%;
         background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 30px;
+            height: 30px;
+           
+        }
     }
 }
